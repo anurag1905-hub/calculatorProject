@@ -1,9 +1,16 @@
 html{
     font-size:12px;
+    height:100%;
 }
 
 body {
     margin:0px;
+    padding:0px;
+    height:100%;
+}
+
+* {
+    box-sizing:border-box;
 }
 
 @media only screen and (max-width:728px){
@@ -23,7 +30,7 @@ body {
 
 #main{
     background-color:lightgray;
-    height:100vh;
+    height:100%;
 }
 
 #header{
@@ -32,14 +39,14 @@ body {
     text-align:center;
     padding:1rem;
     font-size:1rem;
-    height:10vh;
+    height:10%;
 }
 
 #display{
-    height:17vh;
+    height:17%;
     border:1px solid black;
-    margin-top:1vh;
-    margin-bottom:1vh;
+    margin-top:1%;
+    margin-bottom:1%;
     background-color:white;
     overflow:hidden;
     text-align:right;
@@ -48,11 +55,10 @@ body {
 }
 
 .operator{
-    height:14vh;
     display:flex;
     flex-direction:row;
     flex-wrap:no-wrap;
-    height:13.3vh;
+    height:13.3%;
 }
 
 button{
