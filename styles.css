@@ -1,0 +1,63 @@
+html{
+    font-size:12px;
+}
+
+body {
+    margin:0px;
+}
+
+#main{
+    background-color:lightgray;
+    height:100vh;
+}
+
+#header{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:1rem;
+    font-size:1.5rem;
+}
+
+#display{
+    height:12vh;
+    border:1px solid black;
+    margin-top:3rem;
+    margin-bottom:3rem;
+    background-color:white;
+    overflow:hidden;
+    text-align:right;
+    font-size:2rem;
+}
+
+.operator{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:no-wrap;
+    height:13.3vh;
+}
+
+button{
+    display:inline-block;
+    width:25%;
+    text-align:center;
+    font-size:2rem;
+}
+
+.hover_yellow:hover{
+    background-color:yellow;
+}
+
+.lastrow{
+    width:50%;
+}
+
+.brown_color{
+    background-color:brown;
+    border:none;
+    border-bottom:1px solid black;
+}
+
+.brown_color:hover{
+    background-color:rgb(165,42,42,0.8)
+}
