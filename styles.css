@@ -42,6 +42,10 @@ body {
     height:10%;
 }
 
+#heading{
+    margin:auto;
+}
+
 #display{
     height:17%;
     border:1px solid black;
