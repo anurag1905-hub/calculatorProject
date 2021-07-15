@@ -30,43 +30,7 @@ document.getElementById("display").innerHTML=display_str.slice(0,display_str.len
 
 equals.addEventListener('click',function(){
     var temp=document.getElementById("display").innerHTML;
-    var ind;
-    for(var i=0;i<temp.length;++i){
-      if(temp[i]=='+'||temp[i]=='-'||temp[i]=='*'||temp[i]=='/'||temp[i]=='%'){
-          ind=i;
-          break;
-      }
-    }
-    if(ind!=undefined){
-    operand2=temp.slice(ind+1,temp.length);
-    var result;
-    var a=parseInt(operand1);
-    var b=parseInt(operand2);
-    if(operand1!=undefined&&operand2!=undefined){
-       if(operator=="+"){
-           result=a+b;
-       }
-       else if(operator=="-"){
-        result=a-b;
-       }
-       else if(operator=="*"){
-        result=a*b;
-       }
-       else if(operator=="/"){
-        result=a/b;
-       }
-       else if(operator=="%"){
-        result=a%b;
-       }
-    }
-    if(result.isNaN){
-        display.innerHTML="Undefined"
-    }
-    else{
-    display.innerHTML=result;
-    }
-    operationdone=true;
-}
+    display.innerHTML=eval(temp);
 });
 
 addition.addEventListener('click',function(){
